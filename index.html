@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title> Responsive Tables</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.bootstrap5.css">
+  
+   <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5"></div>
+ <table id="example" class="table table-striped" style="width:100%">
+   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.datatables.net/2.0.3/js/dataTables.js"></script>
+<script src="https://cdn.datatables.net/2.0.3/js/dataTables.bootstrap5.js"></script>
+<script>
+$(document).ready(function() {
+    var table = $('#example').DataTable( {
+        responsive: true
+    } );
+ 
+    new $.fn.dataTable.FixedHeader( table );
+} );
+</script>
+   <thead>
+            <tr>
+                <th>Costumer Name</th>
+                <th>Ship</th>
+                <th>Item Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>Warlito</b></td>       
+                <td>Pilar Vill</td>
+                <td>Salted Caramel Milk Tea</td>
+                <td>2</td>
+                <td>50</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td><b>Shane</b></td>
+                <td>South Mall</td>
+                <td>Machiato Milk Tea</td>
+                <td>3</td>
+                <td>40</td>
+                <td>120</td>
+            </tr>
+            <tr>
+                <td><b>Ciara</b></td>
+                <td>Golden Gate</td>
+                <td>Taro Mlik tea</td>
+                <td>1</td> 
+                <td>50</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td><b>Kendric</b></td>
+                <td>Wonder Land</td>
+                <td>Dark Choco Milk Tea</td>
+                <td>5</td>
+                <td>50</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td><b>Loraine</b></td>
+                <td>Saint Mark</td>
+                <td>Winter Melon Milk Tea</td>
+                <td>4</td>
+                <td>55</td>
+                <td>220</td>
+            </tr>
+            <tr>
+                <td><b>Marben Williamson</b></td>
+                <td>Saint Mary</td>
+                <td>Cookies And Cream Milk Tea</td>
+                <td>10</td>
+                <td>40</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td><b>Kia Asia</b></td>
+                <td>Alabang Muntinlupa</td>
+                <td>Strawberry Milk Tea</td>
+                <td>3</td>
+                <td>50</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td><b>Russell atlethic</b></td>
+                <td>Almanza Uno</td>
+                <td>Ice Coffee</td>
+                <td>3</td>
+                <td>60</td>
+                <td>180</td>
+            </tr>
+            <tr>
+                <td><b>Colen Baraba</b></td>
+                <td>Moon Walk</td>
+                <td>Winter Melon Milk Tea</td>
+                <td>2</td>
+                <td>55</td>
+                <td>110</td>
+            </tr>
+            <tr>
+                <td><b>Chard Nolasco</b></td>
+                <td>Casimiro</td>
+                <td>Bunny Milk Tea</td>
+                <td>4</td>
+                <td>50</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td><b>Sandy James</b></td>
+                <td>Annex</td>
+                <td>Dark Choco</td>
+                <td>6</td>
+                <td>50</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td><b>Jim Harales</b></td>
+                <td>Colours Town</td>
+                <td>Four Season Fruit Tea</td>
+                <td>3</td>
+                <td>45</td>
+                <td>135</td>
+            </tr>
+            <tr>
+                <td><b>Richard Pacquio</b></td>
+                <td>Pilar Vill</td>
+                <td>Cookies and Cream Milk Tea</td>
+                <td>7</td>
+                <td>40</td>
+                <td>280</td>
+            </tr>
+            <tr>
+                <td><b>Walter Caldamo</b></td>
+                <td>Golden Gate</td>
+                <td>Winter Melon Milk Tea</td>
+                <td>4</td>
+                <td>55</td>
+                <td>220</td>
+            </tr>
+            <tr>
+                <td><b>Silvana Cury</b></td>
+                <td>Saint Mary</td>
+                <td>Red Velvet Milk Tea</td>
+                <td>6</td>
+                <td>50</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td><b>Balmond</b></td>
+                <td>Casimiro</td>
+                <td>Lyche Fruit Tea</td>
+                <td>5</td>
+                <td>50</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td><b>Reymark Grock</b></td>
+                <td>Almanza Dos</td>
+                <td>Matcha Milk Tea</td>
+                <td>8</td>
+                <td>60</td>
+                <td>480</td>
+            </tr>
+            <tr>
+                <td><b>Gloria Aqiuno</b></td>
+                <td>South Mall</td>
+                <td>Choco Milk Tea</td>
+                <td>2</td>
+                <td>45</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td><b>Vice Ganda<b/></td>
+                <td>Almanza Uno</td>
+                <td>Lemon Fruit Tea</td>
+                <td>3</td>
+                <td>50</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td><b>Manny Pacute</b></td>
+                <td>Saint Mary</td>
+                <td>Cheese Cake Milk Tea</td>
+                <td>6</td>
+                <td>65</td>
+                <td>390</td>
+            </tr>
+        </tbody>
+ </table>
+</body>
+</html>
